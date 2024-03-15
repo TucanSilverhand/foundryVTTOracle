@@ -54,3 +54,8 @@ availability_domain = "XXXXXXXXXXDRID-1-AD-1"
 ubuntu_image_id = "ocid1.image.oc1.eu-madrid-1.aaaaaaaapwi7o7bimzxfzidwhsp3a6mcf76v45ydhdgrsva6lu4d5nbj6fkq"
 ssh_public_key_path = "/Users/xxxxxxxxxx/Data/XXXXXXXXXX/Configurations/ssh-keys/XXXXXXXX.pub"
 ```
+
+17. Ejecutamos: terraform init
+18. Ejecutamos: terraform plan -var-file=mivars.tfvars
+19. Ejecutamos: terraform apply -var-file=mivars.tfvars (nos pedira confirmar, ponemos "yes")
+20. Si queremos destruir TODO ejecutamos terraform destroy -var-file=mivars.tfvars (nos pedira confirmar, ponemos "yes")
